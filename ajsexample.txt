@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+<title>Basic Angular Doc</title>
+</head>
+<body data-ng-init="names=['Alpha', 'Agree', 'Bravo', 'Board', 'Charlie', 'Car', 'Delta', 'Door', 'Echo', 'Eat', 'Foxtrot', 'Fetch', 'Frank', 'Francis', 'Golf', 'Grouper', 'Hotel', 'Hopeful', 'Juliet', 'Jack', 'Lima', 'Lamb']">
+	<div>
+	Title: <input type="text" data-ng-model="name" /> {{ name }}
+
+	<ul>
+		<li data-ng-repeat="nme in names | filter: name">{{ nme }}</li>
+	</ul>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+</body>
+</html>
